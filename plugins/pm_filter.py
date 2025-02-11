@@ -103,7 +103,11 @@ async def pm_AutoFilter(client, msg, pmspoll=False):
         if re.findall("((^\/|^,|^!|^\.|^[\U0001F600-\U000E007F]).*)", message.text): return
         if 2 < len(message.text) < 100:
             search = message.text
+            m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/moviedillu")]]) 
+                                         )
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
+            await m.delete() 
             if not files: return await pm_spoll_choker(msg)              
         else: return 
     else:
