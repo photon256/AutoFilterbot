@@ -188,7 +188,11 @@ async def auto_filter(client, msg, spoll=False):
             return
         if 2 < len(message.text) < 100:
             search = message.text
+            m=await message.reply_sticker("CAACAgQAAxkBAAEKSxplArIUActk4ORQuFn3DHFvBqQCOgACBQMAAnJxFyVYcSIunXgGjjAE",
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f'Seaching for {search} 🔎', url=f"https://t.me/moviedillu")]]) 
+                                         )
             files, offset, total_results = await get_search_results(search.lower(), offset=0, filter=True)
+            await m.delete() 
             if not files:
                 if settings["spell_check"]:
                     return await advantage_spell_chok(msg)
