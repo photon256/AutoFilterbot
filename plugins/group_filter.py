@@ -308,7 +308,7 @@ async def advantage_spell_chok(msg):
     g_s += await search_gagala(msg.text)
     gs_parsed = []
     if not g_s:
-        k = await msg.reply("I Cᴏᴜʟᴅɴ'ᴛ Fɪɴᴅ Aɴʏ Mᴏᴠɪᴇ Iɴ Tʜᴀᴛ Nᴀᴍᴇ")
+        k = await msg.reply("𝘐 𝘊ᴏᴜʟᴅɴ'ᴛ 𝘍ɪɴᴅ 𝘈ɴʏ 𝘔ᴏᴠɪᴇ 𝘐ɴ 𝘛ʜᴀᴛ 𝘕ᴀᴍᴇ 𝘗𝘓𝘌𝘈𝘚𝘌 𝘌𝘕𝘛𝘌𝘙 𝘊𝘖𝘙𝘙𝘌𝘊𝘛 𝘚𝘗𝘌𝘓𝘓𝘐𝘕𝘎 𝘍𝘙𝘖𝘔 𝘎𝘖𝘖𝘎𝘓𝘌")
         await asyncio.sleep(8)
         return await k.delete()
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
