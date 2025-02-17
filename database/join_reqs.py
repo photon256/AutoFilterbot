@@ -1,6 +1,6 @@
 import motor.motor_asyncio
-from info import AUTH_CHANNEL, OTHER_DB_URI
-
+from info import AUTH_CHANNEL
+from info import DATABASE_URL as OTHER_DB_URI
 class JoinReqs:
 
     def __init__(self):
