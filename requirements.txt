@@ -8,10 +8,10 @@ bs4==0.0.1
 shortzy
 
 #---database---#
-pymongo
+pymongo==4.8.0
+marshmallow==3.18.0 
+umongo==3.1.0 
 dnspython
-umongo==3.0.0
-marshmallow==3.19.0
 motor
 
 #---ytdl----#
