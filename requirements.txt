@@ -10,8 +10,8 @@ shortzy
 #---database---#
 pymongo
 dnspython
-marshmallow
-umongo
+umongo==3.0.0
+marshmallow==3.19.0
 motor
 
 #---ytdl----#
