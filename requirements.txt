@@ -11,8 +11,8 @@ shortzy
 pymongo==4.8.0
 marshmallow==3.18.0 
 umongo==3.1.0 
-dnspython
-motor
+dnspython==2.3.0
+motor==3.5.1
 
 #---ytdl----#
 youtube-search-python
